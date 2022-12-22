@@ -16,6 +16,7 @@ p, li {
     font-size: 14px;
 }
 
+
 /* Navbar */
 header, .navbar{
     background-color: #353d41;
@@ -48,6 +49,7 @@ header, .navbar{
     padding: 1rem .8rem;
 }
 
+
 /* Slider */
 
 .container-fluid {
@@ -75,6 +77,7 @@ header, .navbar{
 }
 
 .main-btn {
+    text-decoration: none;
     background-color: #65daf9;
     color: #fff;
     text-transform: uppercase;
@@ -87,7 +90,6 @@ header, .navbar{
 }
 
 .main-btn:hover {
-    text-decoration: none;
     color: #fff;
     background-color: transparent;
     border-color: #65daf9;
@@ -96,6 +98,7 @@ header, .navbar{
 .carousel-indicators .active{
     background-color: #65daf9;
 }
+
 
 /* About Area */
 
@@ -138,4 +141,208 @@ header, .navbar{
 #about-list i{
     color: #65daf9;
     margin-right: 10px;
+}
+
+
+/* Service Area */
+
+.service-box {
+    cursor: pointer;
+}
+
+.service-box i, .service-box h4 {
+    transition: .5s;
+}
+
+.service-box:hover > i, .service-box:hover > h4 {
+    color: #65daf9 !important;
+}
+
+
+/* Data Area */
+
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+
+/* Apply Area */
+
+#apply-area .row {
+    height: 600px;
+}
+
+#company-img {
+    background-image: url('../img/empresa.jpg');
+    background-size: cover;
+}
+
+#apply-area .main-btn:hover {
+    background-color: #65daf9 !important;
+}
+
+
+/* Portifolio Area */
+
+#portifolio-area .filter-btn {
+    color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    text-transform: none;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 15px;
+    padding: 0 20px;
+}
+
+#portifolio-area .filter-btn.active, #portifolio-area .filter-btn:hover {
+    color: #fff;
+    background-color: #65daf9;
+    border-color: #65daf9; 
+}
+
+
+/* Newsletter Area */
+
+input#news-email {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #65daf9;
+    box-sizing: border-box;
+    width: 40%;
+    height: 40px;
+}
+
+input#news-btn {
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #65daf9;
+    background-color: #65daf9;
+    text-transform: uppercase;
+    color: #fff;
+    height: 40px;
+    padding: 0 30px;
+    transition: .5s;
+}
+
+input#news-btn:hover {
+    background-color: #fff;
+    color: #65daf9;
+}
+
+
+/* Call Area */
+
+#call-area {
+    background-color: #65daf9;
+}
+
+#call-area p {
+    height: 60px;
+    line-height: 60px;
+    letter-spacing: 3px;
+}
+
+#call-area #call-btn {
+    padding: 0 !important;
+    background-color: #fff;
+    color: #65daf9;
+}
+
+
+/* Contact Area */
+
+#contact-area i {
+    color: #333;
+    border: 2px solid #444;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#contact-area span {
+    color: #3ec1d5;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+#contact-form .main-btn {
+    width: 100%;
+    height: 50px;
+}
+
+#contact-form .main-btn:hover {
+    color: #3ec1d5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 0;
+    }
+
+    /* Slider */
+    #mainSlider .carousel-caption h2 {
+        font-size: 33px;
+    }
+
+    #mainSlider .carousel-caption p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    /* Data Area */
+    #data-area p {
+        font-size: 16px;
+    }
+
+    #team-area .card-title {
+        font-size: 16px;
+    }
+
+    #team-area .card-text {
+        font-size: 12px;
+    }
+
+    /* Newsletter Area */
+    #newsletter-area .input-group {
+        width: 75% !important;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .main-title {
+        font-size: 30px;
+    }
+
+    /* Slider */
+    #mainSlider .carousel-caption .main-btn {
+        font-size: 14px;
+    }
+
+    /* Newsletter Area */
+    #newsletter-area .input-group {
+        width: 100% !important;
+    }
+
+    #call-area p {
+        line-height: normal;
+    }
+
+    #call-area p, #call-area #call-btn{
+        letter-spacing: normal;
+        font-size: 15px;
+    }
 }
